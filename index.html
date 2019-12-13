@@ -1,10 +1,11 @@
+<!-- https://ilovecoding.org/courses/jquery/lessons/project-create-your-own-image-carousel-slider-with-jquery -->
 <!DOCTYPE html>
 <html>
   <head>
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- <script src="src/index.js"></script> -->
+    <script src="src/index.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
 
@@ -13,10 +14,20 @@
       <div class="header">Project Slider</div>
       <div class="slider">
         <ul>
-          <li><img src="img/image1.jpg" alt="First Image"</li>
-          <li><img src="img/image2.jpg" alt="Second Image"</li>
-          <li><img src="img/image3.jpg" alt="Third Image"</li>
+          <li>
+            <img src="img/image1.jpg" alt="First Image" />
+          </li>
+          <li>
+            <img src="img/image2.jpg" alt="Second Image" />
+          </li>
+          <li>
+            <img src="img/image3.jpg" alt="Third Image" />
+          </li>
         </ul>
+        <div class="nav">
+          <button data-nav="prev">&lt;</button>
+          <button data-nav="nex">&gt;</button>
+        </div>
       </div>
     </div>
   </body>

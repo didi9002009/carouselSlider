@@ -8,16 +8,32 @@ body {
   color: blue;
 }
 .main-class {
-  width: 600px;
+  width: 750px;
   margin: auto;
   background-color: white;
   border: 1px solid #ddd;
   padding: 10px;
 }
 
+.slider {
+  width: 750px;
+  overflow: hidden;
+}
 .header {
   padding: 15px;
   font-size: 110%;
   background-color: #47ad54;
   color: #fff;
+}
+.slider ul {
+  list-style: none;
+  width: 750px;
+  position: relative;
+  left: 0px;
+  padding: 0;
+  margin: 0;
+}
+
+slider ul li {
+  float: right;
 }

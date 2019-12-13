@@ -1,9 +1,38 @@
-import "./styles.css";
+$(document).ready(function($) {
+  var imageBox = $(".slicer ul"),
+    imageWidth = $(".slider ul li")
+      .first()
+      .children("img")
+      .width(),
+    imageQuantity = $(".slider ul").children("li").length,
+    currentImage = 1;
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use Parcel to bundle this sandbox, you can find more info about Parcel
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+  imageBox.css("width", imageWidth * imageQuantity);
+  console.log(imageWidth);
+
+  $(".nav button").on("click", function() {
+    var whichButton = $(this).data("nav");
+    if (whichButton === "next") {
+      if (currentImage === imageQuantity) {
+        currentImage = 1;
+        transition(currentImage, imageWidth);
+      } else currentImage++;
+      transition(currentImage, imageWidth);
+    } else if (whichButton === "prev") {
+      if (currentImage === 1) {
+        currentImage = imageQuantity;
+        transition(currentImage, imageWidth);
+      } else {
+        currentImage--;
+        transition(currentImage, imageWidth);
+      }
+    }
+  });
+
+  function transition(currentImageInput, imageWidthInput) {
+    var pxValue = -(currentImage - 1) * imageWidth;
+    imageBox.aniamate({
+      left: pxValue
+    });
+  }
+});
