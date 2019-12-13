@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+  background-color: grey;
+  font-size: 150%;
+}
+
+* {
+  color: blue;
+}
+.main-class {
+  width: 600px;
+  margin: auto;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.header {
+  padding: 15px;
+  font-size: 110%;
+  background-color: #47ad54;
+  color: #fff;
+}

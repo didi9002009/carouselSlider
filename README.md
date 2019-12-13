@@ -1,2 +1,0 @@
-# carouselSlider
-Created with CodeSandbox
