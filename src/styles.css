@@ -8,7 +8,7 @@ body {
   color: blue;
 }
 .main-class {
-  width: 750px;
+  width: 1920px;
   margin: auto;
   background-color: white;
   border: 1px solid #ddd;
@@ -16,7 +16,7 @@ body {
 }
 
 .slider {
-  width: 750px;
+  width: 1920px;
   overflow: hidden;
 }
 .header {
