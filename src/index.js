@@ -1,3 +1,4 @@
+/*eslint-env jquery*/
 $(document).ready(function($) {
   var imageBox = $(".slicer ul"),
     imageWidth = $(".slider ul li")
